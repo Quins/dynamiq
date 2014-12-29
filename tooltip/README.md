@@ -1,23 +1,19 @@
 Tooltip
+=====
+## Usage: 
 
-Usage: 
-`
-$("[data-tooltip]").tooltips({
-	
-	"descriptor": {
-		// options
-	}
-});
-`
+    $("[data-tooltip]").tooltips({
+        "descriptor": {
+            // options
+        }
+    });
 
-Required markup: 
+## Required markup: 
 
-`
-<element data-tooltip="true" data-tooltip-descriptor="descriptor"></element>
-<sibling data-tooltip-target="true" data-tooltip-target-descriptor="descriptor"></sibling>
-`
+    <element data-tooltip="true" data-tooltip-descriptor="descriptor"></element>
+    <sibling data-tooltip-target="true" data-tooltip-target-descriptor="descriptor"></sibling>
 
-Options are:
+## Options:
 
 `template` – you can pass any valid html as template. If you would like to pass parameters to template, that are generated in markup, you could specify `%param%` in template code and pass it with `data-tooltip-param` attribute. Parameter could be any valid html or text.
 Default value: `<div class="g-tooltip">%contents%</div>`.
